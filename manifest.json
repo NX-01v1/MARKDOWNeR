@@ -1,1 +1,46 @@
-manifest.json
+{
+  "name": "Markdown Editor PWA",
+  "short_name": "MD Editor",
+  "description": "タブ機能とPWA対応のMarkdownエディタです。",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f4f6",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "IMG_1289.jpeg",
+      "sizes": "48x48",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "IMG_1289.jpeg",
+      "sizes": "72x72",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "IMG_1289.jpeg",
+      "sizes": "96x96",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "IMG_1289.jpeg",
+      "sizes": "144x144",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "IMG_1289.jpeg",
+      "sizes": "168x168",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "IMG_1289.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "IMG_1289.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
