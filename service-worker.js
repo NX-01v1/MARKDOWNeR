@@ -1,20 +1,14 @@
-const CACHE_NAME = 'markdown-editor-v1'; // キャッシュ名とバージョンを定義
+const CACHE_NAME = 'markdown-editor-v2'; // キャッシュ名とバージョンを更新して新しいキャッシュを強制
 const urlsToCache = [
   './', // index.html
   'index.html',
   'manifest.json',
+  'service-worker.js', // サービスワーカー自身もキャッシュする
+  'IMG_1289.jpeg', // アップロードされたアイコン画像をキャッシュ対象に追加
   'https://cdn.tailwindcss.com',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
   'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
-  'https://cdn.jsdelivr.net/npm/marked/marked.min.js',
-  // アイコンのプレースホルダーもキャッシュ対象に含めます (実際は実際のアイコンファイルへのパスに置き換えてください)
-  'https://placehold.co/48x48/2563eb/ffffff?text=MD',
-  'https://placehold.co/72x72/2563eb/ffffff?text=MD',
-  'https://placehold.co/96x96/2563eb/ffffff?text=MD',
-  'https://placehold.co/144x144/2563eb/ffffff?text=MD',
-  'https://placehold.co/168x168/2563eb/ffffff?text=MD',
-  'https://placehold.co/192x192/2563eb/ffffff?text=MD',
-  'https://placehold.co/512x512/2563eb/ffffff?text=MD'
+  'https://cdn.jsdelivr.net/npm/marked/marked.min.js'
 ];
 
 // インストールイベント - アプリケーションシェルをキャッシュする
